@@ -17,7 +17,7 @@ class TestAdd : public ::testing::Test
 
 // Don't worry about the syntax here, the TEST_F macro is very complicated.
 // Just know that this is how you create a test case.
-TEST_F(TestAdd, AddTest)
+TEST_F(TestAdd, AddTest) // TEST_F creates a test that uses a test fixture
 {
     // This should pass, 2 + 4 = 6
     EXPECT_EQ(add(2, 4), 6);
