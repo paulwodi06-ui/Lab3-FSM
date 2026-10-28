@@ -3,3 +3,4 @@ main
 .vscode/
 *.vcd
 .DS_Store
+**/vbuddy.cfg
