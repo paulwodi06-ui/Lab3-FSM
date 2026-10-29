@@ -217,3 +217,13 @@ Finally, in the testbench, you may use two new Vbuddy functions added in version
 3. The testbench calls **_vbdElapsed()_** function to read the reaction time in milliseconds.
 4. The testbench reports by sending it to Vbuddy as a message on the TFT screen.
 You may want to display this in binary, using a binary to BCD converter, or in hex.
+
+### Task 3 — Clock-Tick Generator
+
+- Compiled and tested the provided `clktick.sv` module using Verilator and Vbuddy.
+- Examined how the module generates periodic tick pulses using a countdown counter.
+- Calibrated the simulation against a 60 BPM metronome.
+- Found that `N = 45` produces an approximately one-second tick interval on my laptop.
+- Verified that the NeoPixel LED bar flashes periodically and responds to changes in `N`.
+
+The optional automatic Formula 1 light sequence was not implemented.
